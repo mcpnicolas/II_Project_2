@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 365.0, 79.0, 630.0, 449.0 ],
+		"rect" : [ 352.0, 130.0, 724.0, 541.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 259.0, 320.0, 258.0, 47.0 ],
+					"patching_rect" : [ 362.0, 264.0, 258.0, 47.0 ],
 					"style" : "",
 					"text" : "see:\np_8_blob_background_blob_x_y_out\np_4_motionDetection_backgrroundSubtraction"
 				}
@@ -108,7 +108,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 10.0, 329.0, 141.0 ],
 					"style" : "",
-					"text" : "TODO:\n- use camera input to create live feed\n- use background subtraction to determine when people are in photobooth frame (account for single person or multiple people)\n- take photo at candid moment - when exactly? - and send to photoFilter\n- countdown 3-2-1\n- project returned photoFiltered image onto screen and capture image"
+					"text" : "TODO (as of 3/5/18):\n- use camera input to create live feed\n- use background subtraction to determine when people are in photobooth frame (account for single person or multiple people)\n- take photo at candid moment - when exactly? - and send to photoFilter\n- countdown 3-2-1\n- project returned photoFiltered image onto screen and capture image"
 				}
 
 			}
