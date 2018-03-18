@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 208.0, 152.0, 877.0, 537.0 ],
+		"rect" : [ 298.0, 79.0, 877.0, 537.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,110 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-107",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1021.0, 470.666687, 136.0, 22.0 ],
+					"style" : "",
+					"text" : "print display countdown"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-106",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 608.000061, 468.666687, 136.0, 22.0 ],
+					"style" : "",
+					"text" : "print display countdown"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ -1.333337, 461.833344, 111.333336, 47.0 ],
+					"style" : "",
+					"text" : "display 3, 2, 1 countdown on monitor",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 118.5, 461.833344, 136.0, 22.0 ],
+					"style" : "",
+					"text" : "print display countdown"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-102",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1254.000122, 834.666687, 166.0, 33.0 ],
+					"style" : "",
+					"text" : "send images to printer in chronological order"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-100",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1248.000122, 735.000061, 160.0, 20.0 ],
+					"style" : "",
+					"text" : "capture the images"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-98",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1248.000122, 692.000061, 162.0, 33.0 ],
+					"style" : "",
+					"text" : "display the number countdown"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-96",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1248.000122, 665.000061, 158.0, 20.0 ],
+					"style" : "",
+					"text" : "to do "
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 0.43 ],
 					"fontsize" : 14.0,
@@ -75,9 +179,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1168.0, 612.0, 161.0, 60.0 ],
+					"patching_rect" : [ 1276.000122, 762.499939, 154.0, 60.0 ],
 					"style" : "",
-					"text" : "need to program how to capture the image, apply filter to it, project it and capture that image"
+					"text" : "apply filter to it (jitter subpatch), project that image and capture next image"
 				}
 
 			}
@@ -87,7 +191,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1146.666748, 486.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1237.666748, 502.833344, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "capture third photo"
 				}
@@ -100,7 +204,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1090.666748, 474.166687, 24.0, 24.0 ],
+					"patching_rect" : [ 1220.0, 468.666687, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -261,13 +365,13 @@
 				"box" : 				{
 					"bgcolor" : [ 0.713916, 0.807191, 0.841836, 1.0 ],
 					"id" : "obj-68",
-					"linecount" : 2,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 789.666687, 401.833344, 150.0, 33.0 ],
+					"patching_rect" : [ 784.333374, 393.833344, 189.0, 74.0 ],
 					"style" : "",
-					"text" : "not sure why this is counting down incorrectly"
+					"text" : "this counts down correctly when it's triggered by the pink button alone, but doesn't count down correctly when triggered by the blue button. "
 				}
 
 			}
@@ -338,7 +442,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 213.666672, 644.0, 150.0, 47.0 ],
 					"style" : "",
-					"text" : "check to see if delay is working properly, which it is not "
+					"text" : "check to see if delay is working properly, which it is not ",
+					"textjustification" : 2
 				}
 
 			}
@@ -361,7 +466,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 256.333313, 468.666687, 24.0, 24.0 ],
+					"patching_rect" : [ 293.666656, 461.833344, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -420,6 +525,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.896344, 0.006963, 0.585081, 1.0 ],
 					"id" : "obj-35",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -442,7 +548,7 @@
 					"patching_rect" : [ 94.333344, 527.333374, 163.0, 60.0 ],
 					"style" : "",
 					"text" : "after 1, display SMILE!\n& take photo (( STILL NEED TO PROGRAM THIS )) \nthen repeat countdown",
-					"textjustification" : 0
+					"textjustification" : 2
 				}
 
 			}
@@ -538,6 +644,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.0, 0.078549, 0.772043, 1.0 ],
 					"id" : "obj-11",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -624,6 +731,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"midpoints" : [ 153.5, 448.583344, 128.0, 448.583344 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"midpoints" : [ 223.166672, 244.499985, 153.5, 244.499985 ],
 					"source" : [ "obj-20", 0 ]
@@ -656,7 +771,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
-					"midpoints" : [ 175.5, 408.0, 265.833313, 408.0 ],
+					"midpoints" : [ 175.5, 408.0, 303.166656, 408.0 ],
 					"source" : [ "obj-34", 1 ]
 				}
 
@@ -698,7 +813,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
-					"midpoints" : [ 265.833313, 514.833252, 314.833344, 514.833252 ],
+					"midpoints" : [ 303.166656, 514.833252, 314.833344, 514.833252 ],
 					"source" : [ "obj-48", 0 ]
 				}
 
@@ -749,6 +864,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-106", 0 ],
+					"midpoints" : [ 720.166687, 452.0, 617.500061, 452.0 ],
+					"source" : [ "obj-73", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-79", 0 ],
 					"source" : [ "obj-75", 0 ]
 				}
@@ -781,8 +904,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"midpoints" : [ 1043.166748, 455.75, 1030.5, 455.75 ],
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
-					"midpoints" : [ 1063.833374, 410.833344, 1100.166748, 410.833344 ],
+					"midpoints" : [ 1063.833374, 410.833344, 1229.5, 410.833344 ],
 					"source" : [ "obj-83", 1 ]
 				}
 
