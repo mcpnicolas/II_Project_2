@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1174.0, 687.0 ],
+		"rect" : [ 43.0, 79.0, 645.0, 525.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,20 +37,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"bgcolor" : [ 0.136988, 0.979207, 0.700493, 1.0 ],
-					"id" : "obj-52",
-					"linecount" : 9,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 117.5, 1124.0, 163.0, 127.0 ],
-					"style" : "",
-					"text" : "why arent there any images being grabbed and saved? this is a recurring issue that was temporraily fixed, but is back now that i connected exportimage and loadbang to the button triggered when the counter reaches its minimum value. "
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.713916, 0.807191, 0.841836, 0.53 ],
 					"id" : "obj-50",
@@ -348,19 +334,6 @@
 					"patching_rect" : [ 304.559784, 1135.643555, 95.0, 22.0 ],
 					"style" : "newobjYellow-1",
 					"text" : "jit.grab 320 240"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 16.0,
-					"id" : "obj-115",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 481.333344, 186.499878, 197.0, 24.0 ],
-					"style" : "",
-					"text" : "fix the delay objects"
 				}
 
 			}
@@ -928,7 +901,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.333328, 301.333344, 146.0, 74.0 ],
+					"patching_rect" : [ 100.333328, 301.333344, 146.0, 60.0 ],
 					"style" : "",
 					"text" : "(starts delay...)\nthis button simulates when the person presses 'continue' on the screen'\n"
 				}
