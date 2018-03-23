@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 489.0, 79.0, 645.0, 687.0 ],
+		"rect" : [ 659.0, 79.0, 834.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,15 +38,28 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgcolor" : [ 0.236287, 1.0, 0.63945, 1.0 ],
-					"id" : "obj-8",
-					"linecount" : 2,
+					"bgcolor" : [ 0.679729, 1.0, 0.305084, 1.0 ],
+					"id" : "obj-46",
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 226.0, 682.833374, 150.0, 33.0 ],
+					"patching_rect" : [ 481.333344, 766.666687, 150.0, 60.0 ],
 					"style" : "",
-					"text" : "the counter still loops rather than stopping at 0."
+					"text" : "this crazy connection stops the counter from looping once the image is captured."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 396.0, 507.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "clear"
 				}
 
 			}
@@ -1110,8 +1123,18 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"midpoints" : [ 566.0, 696.0 ],
+					"order" : 1,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"midpoints" : [ 160.333344, 1123.321777, 314.059784, 1123.321777 ],
+					"order" : 0,
 					"source" : [ "obj-32", 0 ]
 				}
 
