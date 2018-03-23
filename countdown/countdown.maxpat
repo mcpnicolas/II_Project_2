@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 43.0, 79.0, 645.0, 525.0 ],
+		"rect" : [ 489.0, 79.0, 645.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,20 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.236287, 1.0, 0.63945, 1.0 ],
+					"id" : "obj-8",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 226.0, 682.833374, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "the counter still loops rather than stopping at 0."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.713916, 0.807191, 0.841836, 0.53 ],
 					"id" : "obj-50",
@@ -926,9 +940,9 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 174.0, 640.333374, 81.0, 22.0 ],
+					"patching_rect" : [ 174.0, 640.333374, 71.0, 22.0 ],
 					"style" : "",
-					"text" : "counter 1 0 3"
+					"text" : "counter 3"
 				}
 
 			}
@@ -1120,7 +1134,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
-					"midpoints" : [ 204.166672, 682.0, 333.166656, 682.0 ],
+					"midpoints" : [ 200.833328, 682.0, 333.166656, 682.0 ],
 					"source" : [ "obj-34", 1 ]
 				}
 
