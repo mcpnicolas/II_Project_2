@@ -38,6 +38,46 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.136988, 0.979207, 0.700493, 1.0 ],
+					"id" : "obj-52",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 117.5, 1124.0, 163.0, 127.0 ],
+					"style" : "",
+					"text" : "why arent there any images being grabbed and saved? this is a recurring issue that was temporraily fixed, but is back now that i connected exportimage and loadbang to the button triggered when the counter reaches its minimum value. "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.713916, 0.807191, 0.841836, 0.53 ],
+					"id" : "obj-50",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 542.666687, 1003.643616, 150.0, 60.0 ],
+					"style" : "",
+					"text" : "...change this to automatically displaying when 'continue' button is pushed"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 389.333344, 758.833374, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -64,450 +104,14 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 321.333344, 836.0, 24.0, 24.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 4,
-							"architecture" : "x86",
-							"modernui" : 1
-						}
-,
-						"rect" : [ 568.0, 79.0, 640.0, 480.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
-						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
-						"visible" : 1,
-						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 275.833344, 72.330017, 370.0, 33.0 ],
-									"style" : "",
-									"text" : "automatically display webcam feed when the patch opens...change this to automatically displaying when 'continue' button is pushed."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-22",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 207.833344, 66.330017, 60.0, 22.0 ],
-									"style" : "",
-									"text" : "loadbang"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-33",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 348.219238, 150.809387, 69.0, 22.0 ],
-									"style" : "messageGold",
-									"text" : "getinputlist"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"fontsize" : 11.595187,
-									"id" : "obj-36",
-									"maxclass" : "jit.fpsgui",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 118.059784, 440.12323, 60.0, 34.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 11.595187,
-									"id" : "obj-10",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 310.804169, 355.739929, 66.0, 21.0 ],
-									"style" : "",
-									"text" : "vdevice $1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-38",
-									"items" : [ "FaceTime HD Camera", ",", "uh vampira gadget" ],
-									"maxclass" : "umenu",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "int", "", "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 310.804169, 327.612244, 145.0, 22.0 ],
-									"style" : "umenuGold"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 11.595187,
-									"id" : "obj-40",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 310.804169, 294.126892, 95.0, 21.0 ],
-									"style" : "",
-									"text" : "prepend append"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 11.595187,
-									"id" : "obj-13",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 310.804169, 263.320251, 27.0, 21.0 ],
-									"style" : "",
-									"text" : "iter"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-41",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 263.184906, 150.809387, 68.0, 22.0 ],
-									"style" : "messageGold",
-									"text" : "getvdevlist"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 11.595187,
-									"id" : "obj-15",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 245.044281, 221.798401, 121.0, 21.0 ],
-									"style" : "",
-									"text" : "route vdevlist inputlist"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-16",
-									"maxclass" : "jit.pwindow",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"onscreen" : 0,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 116.925873, 261.980896, 160.0, 120.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-43",
-									"maxclass" : "toggle",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 118.059784, 120.020935, 24.0, 24.0 ],
-									"presentation_rect" : [ 78.0, 59.0, 24.0, 24.0 ],
-									"style" : "toggleGreen"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"fontsize" : 11.595187,
-									"id" : "obj-18",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 118.059784, 150.809387, 56.0, 21.0 ],
-									"style" : "",
-									"text" : "metro 33"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-19",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 217.833344, 150.809387, 40.0, 22.0 ],
-									"style" : "messageGold",
-									"text" : "close"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-45",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 178.150604, 150.809387, 38.0, 22.0 ],
-									"style" : "messageGold",
-									"text" : "open"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-21",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 118.059784, 186.973572, 95.0, 22.0 ],
-									"style" : "newobjYellow-1",
-									"text" : "jit.grab 320 240"
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"midpoints" : [ 320.304169, 429.407898, 99.919037, 429.407898, 99.919037, 181.615906, 127.559784, 181.615906 ],
-									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-40", 0 ],
-									"source" : [ "obj-13", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-13", 0 ],
-									"midpoints" : [ 254.544281, 253.944397, 320.304169, 253.944397 ],
-									"source" : [ "obj-15", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
-									"source" : [ "obj-16", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"source" : [ "obj-18", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"midpoints" : [ 227.333344, 181.615906, 127.559784, 181.615906 ],
-									"source" : [ "obj-19", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
-									"source" : [ "obj-21", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-16", 0 ],
-									"source" : [ "obj-21", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-43", 0 ],
-									"order" : 1,
-									"source" : [ "obj-22", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-45", 0 ],
-									"order" : 0,
-									"source" : [ "obj-22", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"midpoints" : [ 357.719238, 181.615906, 127.559784, 181.615906 ],
-									"source" : [ "obj-33", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
-									"source" : [ "obj-38", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
-									"source" : [ "obj-40", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"midpoints" : [ 272.684906, 181.615906, 127.559784, 181.615906 ],
-									"source" : [ "obj-41", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"source" : [ "obj-43", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"midpoints" : [ 187.650604, 181.615906, 127.559784, 181.615906 ],
-									"source" : [ "obj-45", 0 ]
-								}
-
-							}
- ],
-						"styles" : [ 							{
-								"name" : "newobjYellow-1",
-								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
-								}
-,
-								"parentstyle" : "",
-								"multi" : 0
-							}
-, 							{
-								"name" : "numberGold-1",
-								"default" : 								{
-									"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
-								}
-,
-								"parentstyle" : "",
-								"multi" : 0
-							}
- ]
-					}
-,
-					"patching_rect" : [ 369.329987, 942.669983, 51.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"style" : "",
-						"tags" : ""
-					}
-,
-					"style" : "",
-					"text" : "patcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-2",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 462.333344, 1021.0, 370.0, 33.0 ],
+					"patching_rect" : [ 490.333344, 968.643616, 172.666656, 33.0 ],
 					"style" : "",
-					"text" : "automatically display webcam feed when the patch opens...change this to automatically displaying when 'continue' button is pushed."
+					"text" : "automatically display webcam feed when the patch opens"
 				}
 
 			}
@@ -532,7 +136,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 394.333344, 1015.0, 60.0, 22.0 ],
+					"patching_rect" : [ 475.666687, 944.643616, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -545,7 +149,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 1085.976929, 110.0, 22.0 ],
+					"patching_rect" : [ 150.833344, 1083.310425, 110.0, 22.0 ],
 					"style" : "",
 					"text" : "exportimage amira"
 				}
@@ -686,7 +290,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 304.559784, 1068.690918, 24.0, 24.0 ],
+					"patching_rect" : [ 304.559784, 1000.643616, 24.0, 24.0 ],
 					"presentation_rect" : [ 78.0, 59.0, 24.0, 24.0 ],
 					"style" : "toggleGreen"
 				}
@@ -1106,20 +710,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.713916, 0.807191, 0.841836, 1.0 ],
-					"id" : "obj-68",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 814.333374, 667.833374, 189.0, 74.0 ],
-					"style" : "",
-					"text" : "this counts down correctly when it's triggered by the pink button alone, but doesn't count down correctly when triggered by the blue button. "
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.701961, 0.415686, 0.886275, 0.0 ],
 					"fontface" : 1,
 					"fontsize" : 14.0,
@@ -1500,6 +1090,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
+					"midpoints" : [ 485.166687, 983.143616, 314.059784, 983.143616 ],
 					"order" : 1,
 					"source" : [ "obj-22", 0 ]
 				}
@@ -1508,6 +1099,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
+					"midpoints" : [ 485.166687, 1032.561523, 374.150604, 1032.561523 ],
 					"order" : 0,
 					"source" : [ "obj-22", 0 ]
 				}
@@ -1532,7 +1124,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"midpoints" : [ 144.5, 1123.321777, 314.059784, 1123.321777 ],
+					"midpoints" : [ 160.333344, 1123.321777, 314.059784, 1123.321777 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -1614,16 +1206,27 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-22", 0 ],
+					"midpoints" : [ 333.166656, 851.738525, 485.166687, 851.738525 ],
+					"order" : 0,
 					"source" : [ "obj-48", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-32", 0 ],
+					"midpoints" : [ 333.166656, 921.071899, 160.333344, 921.071899 ],
+					"order" : 2,
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"midpoints" : [ 333.166656, 769.833374, 366.0, 769.833374, 366.0, 747.833374, 398.833344, 747.833374 ],
+					"order" : 1,
 					"source" : [ "obj-48", 0 ]
 				}
 
