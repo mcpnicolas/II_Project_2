@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 377.0, 79.0, 1179.0, 687.0 ],
+		"rect" : [ 67.0, 79.0, 1179.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,27 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "bang" ],
+					"patching_rect" : [ 36.0, 133.0, 29.5, 22.0 ],
+					"style" : "",
+					"text" : "b"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 70.0, 79.0, 148.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "3252018_215053"
 				}
 
 			}
@@ -82,7 +96,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 74.0, 639.0, 349.0, 60.0 ],
+					"patching_rect" : [ 15.0, 634.0, 349.0, 60.0 ],
 					"style" : "",
 					"text" : "right before 3rd image capture, send out/grab filtered image in separate window and project\n- see p fullscreen\n- needs to trigger to projector"
 				}
@@ -286,7 +300,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 189.5, 356.0, 136.0, 22.0 ],
 					"style" : "",
-					"text" : "op ==p - <= avg"
+					"text" : "op >=p > >> &"
 				}
 
 			}
@@ -603,7 +617,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 53.0, 149.0, 24.0, 24.0 ],
+					"patching_rect" : [ 36.0, 164.5, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -962,7 +976,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 27.0, 293.0, 123.0, 60.0 ],
-					"pic" : "candid.png"
+					"pic" : "3252018_215053.png"
 				}
 
 			}
@@ -1222,6 +1236,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"midpoints" : [ 841.5, 250.0, 771.5, 250.0 ],
 					"source" : [ "obj-20", 0 ]
@@ -1266,6 +1287,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"order" : 2,
 					"source" : [ "obj-25", 0 ]
@@ -1276,14 +1305,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-35", 1 ],
 					"order" : 0,
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"order" : 1,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -1351,7 +1372,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"midpoints" : [ 62.5, 190.0, 83.5, 190.0 ],
+					"midpoints" : [ 45.5, 190.0, 83.5, 190.0 ],
 					"order" : 5,
 					"source" : [ "obj-41", 0 ]
 				}
@@ -1360,7 +1381,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
-					"midpoints" : [ 62.5, 160.0, 175.0, 160.0, 175.0, 139.0, 616.0, 139.0, 616.0, 46.0, 790.0, 46.0 ],
+					"midpoints" : [ 45.5, 160.0, 175.0, 160.0, 175.0, 139.0, 616.0, 139.0, 616.0, 46.0, 790.0, 46.0 ],
 					"order" : 3,
 					"source" : [ "obj-41", 0 ]
 				}
@@ -1369,7 +1390,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
-					"midpoints" : [ 62.5, 160.0, 175.0, 160.0, 175.0, 139.0, 670.0, 139.0, 670.0, 109.0, 856.0, 109.0, 856.0, 49.0, 870.5, 49.0 ],
+					"midpoints" : [ 45.5, 160.0, 175.0, 160.0, 175.0, 139.0, 670.0, 139.0, 670.0, 109.0, 856.0, 109.0, 856.0, 49.0, 870.5, 49.0 ],
 					"order" : 2,
 					"source" : [ "obj-41", 0 ]
 				}
@@ -1378,7 +1399,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
-					"midpoints" : [ 62.5, 160.0, 175.0, 160.0, 175.0, 139.0, 670.0, 139.0, 670.0, 109.0, 907.0, 109.0, 907.0, 49.0, 920.5, 49.0 ],
+					"midpoints" : [ 45.5, 160.0, 175.0, 160.0, 175.0, 139.0, 670.0, 139.0, 670.0, 109.0, 907.0, 109.0, 907.0, 49.0, 920.5, 49.0 ],
 					"order" : 1,
 					"source" : [ "obj-41", 0 ]
 				}
@@ -1387,7 +1408,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
-					"midpoints" : [ 62.5, 160.0, 175.0, 160.0, 175.0, 139.0, 670.0, 139.0, 670.0, 109.0, 946.0, 109.0, 946.0, 49.0, 959.5, 49.0 ],
+					"midpoints" : [ 45.5, 160.0, 175.0, 160.0, 175.0, 139.0, 670.0, 139.0, 670.0, 109.0, 946.0, 109.0, 946.0, 49.0, 959.5, 49.0 ],
 					"order" : 0,
 					"source" : [ "obj-41", 0 ]
 				}
@@ -1396,7 +1417,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-91", 0 ],
-					"midpoints" : [ 62.5, 160.0, 175.0, 160.0, 175.0, 148.0, 199.0, 148.0 ],
+					"midpoints" : [ 45.5, 160.0, 175.0, 160.0, 175.0, 148.0, 199.0, 148.0 ],
 					"order" : 4,
 					"source" : [ "obj-41", 0 ]
 				}
@@ -1859,7 +1880,14 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "3252018_215053.png",
+				"bootpath" : "~/GitHub/II_Project_2/countdown",
+				"patcherrelativepath" : ".",
+				"type" : "PNG ",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 
