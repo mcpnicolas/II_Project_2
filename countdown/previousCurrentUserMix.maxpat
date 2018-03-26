@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 67.0, 79.0, 1152.0, 687.0 ],
+		"rect" : [ 467.0, 79.0, 1152.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -59,57 +59,6 @@
 					"patching_rect" : [ 650.5, 246.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-38",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 478.0, 615.0, 150.0, 33.0 ],
-					"style" : "",
-					"text" : "receives 2nd image capture (standalone)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 478.0, 549.0, 202.0, 33.0 ],
-					"style" : "",
-					"text" : "receives 3rd image capture (includes projection)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 659.0, 136.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 624.0, 65.0, 22.0 ],
-					"style" : "",
-					"text" : "r capture2"
 				}
 
 			}
@@ -205,19 +154,6 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"id" : "obj-34",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 411.0, 531.0, 240.0, 20.0 ],
-					"style" : "",
-					"text" : "MOVE THESE TO PHOTO STRIP PATCH"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
 					"id" : "obj-23",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -226,31 +162,6 @@
 					"patching_rect" : [ 597.0, 10.0, 112.0, 33.0 ],
 					"style" : "",
 					"text" : "receives current user's 2nd photo"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 592.0, 136.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 560.5, 65.0, 22.0 ],
-					"style" : "",
-					"text" : "r capture3"
 				}
 
 			}
@@ -467,7 +378,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 151.5, 635.5, 115.0, 22.0 ],
 					"style" : "",
-					"text" : "3252018_141145"
+					"text" : "3252018_222731"
 				}
 
 			}
@@ -550,7 +461,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 218.0, 528.0, 272.0, 22.0 ],
 									"style" : "",
-									"text" : "3252018_141145"
+									"text" : "3252018_222731"
 								}
 
 							}
@@ -1210,9 +1121,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 63.0, 583.5, 70.0, 22.0 ],
+					"patching_rect" : [ 20.0, 665.5, 105.0, 22.0 ],
 					"style" : "",
-					"text" : "send print1"
+					"text" : "send capture1mix"
 				}
 
 			}
@@ -1444,7 +1355,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 30.0, 177.0, 96.0, 50.0 ],
-					"pic" : "defaultPrevious.png",
+					"pic" : "3252018_222525.png",
 					"presentation_rect" : [ 0.0, 0.0, 360.0, 240.0 ]
 				}
 
@@ -1596,6 +1507,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"order" : 2,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
@@ -1613,13 +1532,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-112", 1 ],
 					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
-					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -1682,13 +1594,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 1 ],
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-44", 1 ],
 					"source" : [ "obj-40", 0 ]
 				}
@@ -1703,7 +1608,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 1,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
+					"order" : 0,
 					"source" : [ "obj-44", 0 ]
 				}
 
@@ -1881,14 +1795,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "defaultPrevious.png",
-				"bootpath" : "~/GitHub/II_Project_2/countdown",
-				"patcherrelativepath" : ".",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "3252018_12848.png",
+				"name" : "3252018_222525.png",
 				"bootpath" : "~/GitHub/II_Project_2/countdown",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
