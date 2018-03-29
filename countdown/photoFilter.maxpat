@@ -200,7 +200,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 70.0, 79.0, 148.0, 22.0 ],
 					"style" : "",
-					"text" : "3262018_5722"
+					"text" : "3262018_135536"
 				}
 
 			}
@@ -442,7 +442,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 189.5, 356.0, 136.0, 22.0 ],
 					"style" : "",
-					"text" : "op abs min >=p |"
+					"text" : "op +m || & <<"
 				}
 
 			}
@@ -1118,7 +1118,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 27.0, 293.0, 123.0, 60.0 ],
-					"pic" : "3262018_5722.png"
+					"pic" : "3262018_135536.png"
 				}
 
 			}
@@ -1498,6 +1498,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
+					"order" : 0,
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"order" : 1,
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -2111,7 +2120,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "3262018_5722.png",
+				"name" : "3262018_135536.png",
 				"bootpath" : "~/GitHub/II_Project_2/countdown",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
